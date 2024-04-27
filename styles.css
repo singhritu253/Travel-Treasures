@@ -1,0 +1,742 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header,
+main,
+footer,
+.box {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background: url("https://template-kit.evonicmedia.com/layout24/wp-content/uploads/2022/11/header-image-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(13, 13, 13, 0.468);
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.navbar .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: all 0.25s linear;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.nav-list li:first-child .nav-link {
+    color: orange;
+}
+
+.nav-link:hover {
+    color: orange;
+}
+
+.btn {
+    background-color: orange;
+    padding: 0.3rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.25s linear;
+}
+
+.btn:hover {
+    background-color: #021F41;
+}
+
+.menu-close {
+    display: none;
+    cursor: pointer;
+}
+
+.close {
+    display: none;
+}
+
+.heder-content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.heder-content h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: orange;
+    letter-spacing: 0.2rem;
+    line-height: 1;
+}
+
+.heder-content p {
+    color: gainsboro;
+    font-weight: 550;
+    width: 25rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    max-width: 100%;
+}
+
+.heder-content button {
+    border: none;
+    padding: 0.6rem 2rem;
+    border-radius: 0 1rem;
+    background-color: orange;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    transition: all 0.25s ease-in-out;
+}
+
+.heder-content button:hover {
+    background-color: #021F41;
+}
+
+/* main / first-section styling */
+.first-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    padding-inline: 4rem;
+}
+
+.first-sec .about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-start;
+    flex-basis: 50%;
+}
+
+.about-us p:first-child {
+    color: orange;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.about-us p:nth-child(3) {
+    color: gray;
+    line-height: 1.3rem;
+}
+
+.about-us .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+}
+
+.first-sec-img img {
+    width: 100%;
+
+}
+
+/* seacond-section styling */
+.seacond-sec {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 4rem;
+    background-color: #021F41;
+    margin-top: 2rem;
+}
+
+.seacond-sec h2 {
+    color: orange;
+    font-weight: 900;
+    padding: 0.5rem 0;
+}
+
+.seacond-sec p {
+    color: gray;
+    font-weight: 800;
+    padding: 0.3rem 0;
+}
+
+.left-sec {
+    flex-basis: 55%;
+}
+
+.right-sec {
+    flex-basis: 50%;
+}
+
+
+.img img {
+    width: 100%;
+}
+
+.img {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.25s linear;
+}
+
+.img h3 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    display: none;
+    color: #021F41;
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.img:hover {
+    transform: scale(0.9);
+
+}
+
+.img:hover h3 {
+    display: block;
+}
+
+/* third sec */
+.third-sec {
+    padding: 4rem;
+}
+
+.tours-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.tours-info .top {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding-bottom: 1rem;
+    flex-basis: 60%;
+}
+
+.tours-info p:first-child {
+    color: orange;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+.tours-info .top h2 {
+    font-weight: 900;
+    font-size: 2rem;
+    color: #021F41;
+}
+
+.tours-info .top p:nth-child(3) {
+    font-weight: 600;
+    color: gray;
+}
+
+.btns .btn {
+    padding: 0.8rem 1.9rem;
+    border-radius: 1.3rem;
+}
+
+.places-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.city {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+    box-shadow: 3px 3px 4px 3px gainsboro;
+}
+
+.city h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 0 1rem;
+    color: #021F41;
+}
+
+.city p {
+    font-weight: 600;
+    color: gray;
+    padding: 0 1rem;
+}
+
+.city a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 530;
+    color: orange;
+    transition: all 0.25s linear;
+    padding: 1rem;
+}
+
+.city a:hover {
+    color: #021F41;
+    text-decoration: underline;
+}
+
+.city img {
+    width: 100%;
+    transition: all 0.25s linear;
+}
+
+.city img:hover {
+    transform: scale(0.9);
+}
+
+/* article /team/styling */
+.ourteam {
+    padding: 1rem;
+}
+
+.ourteam h2 {
+    font-size: 2rem;
+    color: #021F41;
+    font-weight: 800;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.ourteam p {
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    color: rgb(63, 61, 61);
+    margin-bottom: 1rem;
+}
+
+.ourteam .content {
+    border: 2px solid black;
+}
+
+.ourteam .content h4 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.ourteam .content p {
+    padding: 0 1rem;
+}
+
+.team-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    gap: 1rem;
+}
+
+.team-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* contact / styling */
+.contact-us {
+    padding: 2rem;
+    color: #021F41;
+}
+
+.contact-us h3 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+input {
+    width: 50%;
+    padding: 0.6rem;
+    border: 2px solid gray;
+    text-transform: capitalize;
+}
+
+label {
+    padding: 1rem;
+    padding-bottom: 0;
+    text-align: left;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #021F41;
+    margin-bottom: 0.4rem;
+    font-size: 1.3rem;
+}
+
+input:last-child {
+    width: 25%;
+    cursor: pointer;
+    margin-top: 1rem;
+    background-color: #021F41;
+    color: white;
+}
+
+/* footer styling */
+footer {
+    background-color: #021F41;
+    padding: 3rem;
+}
+
+footer h4 {
+    color: orange;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.footer-groups {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.links-group ul li {
+    list-style: none;
+    margin-bottom: 0.9rem;
+}
+
+.links-group ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+.links-group ul li a:hover {
+    color: orange;
+}
+
+.contact-group ul li {
+    list-style: none;
+    color: white;
+    margin-bottom: 0.9rem;
+    text-transform: capitalize;
+}
+
+.sales-group {
+    color: white;
+}
+
+.sales-group p {
+    margin-bottom: 0.9rem;
+}
+
+hr {
+    border: 1px solid orange;
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copy img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.copy p {
+    color: white;
+    font-size: 0.7rem;
+}
+
+@media(max-width:1112px) {
+    .team-info {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:980px) {
+    .places-info {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:925px) {
+    .first-sec {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .first-sec-img img {
+        height: auto;
+    }
+
+    .first-sec .about-us {
+        align-items: center;
+        text-align: center;
+    }
+
+    .seacond-sec {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media(max-width:800px) {
+
+    .menu-close {
+        display: block;
+        z-index: 9999;
+    }
+
+    .main-navbar {
+        position: relative;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: #021F41;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.25s ease-in-out;
+        transform: translate(100%);
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list li:first-child .nav-link {
+        color: white;
+    }
+
+    .nav-link {
+        border: 1px solid white;
+        font-size: 0.8rem;
+        padding: 0.2rem 1rem;
+    }
+
+
+    .nav-link:hover {
+        border: none;
+        background-color: orange;
+        color: rgb(255, 253, 253);
+    }
+
+    .nav-list button:hover {
+        border: 1.3px solid white;
+    }
+
+    .active .navbar {
+        transform: translate(0%);
+        pointer-events: auto;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .active .menu-close .close {
+        display: block;
+    }
+
+    .active .menu-close .menu {
+        display: none;
+    }
+
+    .team-info {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    .footer-groups {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media(max-width:619px) {
+
+    header,
+    .box {
+        height: 50vh;
+    }
+
+    .heder-content {
+        padding: 0 1rem;
+    }
+
+    .heder-content h1 {
+        font-size: 3rem;
+    }
+
+    .first-sec {
+        padding: 1rem;
+    }
+
+    .seacond-sec {
+        padding: 1.3rem;
+    }
+
+    .third-sec {
+        padding: 1.8rem;
+    }
+
+    .places-info {
+        grid-template-columns: 1fr;
+    }
+
+    .tours-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        margin-bottom: 1rem;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    .copy {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: flex-start;
+    }
+}
+
+@media(max-width:400px) {
+
+    .tours-info .top h2,
+    .about-us h2,
+    .seacond-sec h2,
+    .ourteam h2,
+    .contact-us h3 {
+        font-size: 1.4rem;
+    }
+
+    .img h3 {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .ourteam .content h4 {
+        font-size: 1rem;
+    }
+
+    .city h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .heder-content h1 {
+        font-size: 1.9rem;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    input:last-child {
+        width: 80%;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .third-sec {
+        padding: 1rem;
+    }
+
+    footer h4 {
+        font-size: 1rem;
+    }
+
+    .contact-group ul li,
+    .links-group ul li a,
+    .sales-group p {
+        font-size: 0.8rem;
+    }
+
+}
